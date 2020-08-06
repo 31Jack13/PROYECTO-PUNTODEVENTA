@@ -11,7 +11,7 @@ using MiLibreria;
 
 namespace PROYECTOPVA
 {
-    public partial class FRMADMIN : Form
+    public partial class FRMADMIN : FRMPadre
     {
         public FRMADMIN()
         {

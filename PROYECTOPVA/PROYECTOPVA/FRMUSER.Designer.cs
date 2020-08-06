@@ -38,7 +38,6 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.btnEntrar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -49,6 +48,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptrFoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(575, 334);
             // 
             // label5
             // 
@@ -155,19 +158,6 @@
             this.button3.Text = "Cambiar Contraseña";
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(575, 339);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(213, 37);
-            this.button2.TabIndex = 34;
-            this.button2.Text = "Salir";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -209,9 +199,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(46, 209);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(189, 23);
+            this.label2.Size = new System.Drawing.Size(161, 23);
             this.label2.TabIndex = 27;
-            this.label2.Text = "Nombre del Usuario:";
+            this.label2.Text = "Nivel del Usuario:";
             // 
             // label1
             // 
@@ -264,7 +254,6 @@
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEntrar);
             this.Controls.Add(this.panel2);
@@ -276,6 +265,24 @@
             this.Text = "FRMUSER";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FRMUSER_FormClosed);
             this.Load += new System.EventHandler(this.FRMUSER_Load);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.panel2, 0);
+            this.Controls.SetChildIndex(this.btnEntrar, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.button3, 0);
+            this.Controls.SetChildIndex(this.pictureBox2, 0);
+            this.Controls.SetChildIndex(this.txtID, 0);
+            this.Controls.SetChildIndex(this.txtNombre, 0);
+            this.Controls.SetChildIndex(this.txtUsuario, 0);
+            this.Controls.SetChildIndex(this.panel1, 0);
+            this.Controls.SetChildIndex(this.panel3, 0);
+            this.Controls.SetChildIndex(this.panel4, 0);
+            this.Controls.SetChildIndex(this.ptrFoto, 0);
+            this.Controls.SetChildIndex(this.label5, 0);
+            this.Controls.SetChildIndex(this.label6, 0);
+            this.Controls.SetChildIndex(this.label4, 0);
+            this.Controls.SetChildIndex(this.btnSalir, 0);
             ((System.ComponentModel.ISupportInitialize)(this.ptrFoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -295,7 +302,6 @@
         private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnEntrar;
         private System.Windows.Forms.Panel panel2;

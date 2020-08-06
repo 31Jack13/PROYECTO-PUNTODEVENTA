@@ -11,7 +11,7 @@ using MiLibreria;
 
 namespace PROYECTOPVA
 {
-    public partial class FRMUSER : Form
+    public partial class FRMUSER : FRMPadre
     {
         public FRMUSER()
         {

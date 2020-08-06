@@ -34,7 +34,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnSesion = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
             this.btnPass = new System.Windows.Forms.Button();
             this.btnUsuarios = new System.Windows.Forms.Button();
             this.txtID = new System.Windows.Forms.TextBox();
@@ -50,6 +49,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.ptrFoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.Location = new System.Drawing.Point(553, 399);
             // 
             // label1
             // 
@@ -117,19 +120,6 @@
             this.btnMenu.TabIndex = 15;
             this.btnMenu.Text = "Menú Principal";
             this.btnMenu.UseVisualStyleBackColor = false;
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSalir.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnSalir.Location = new System.Drawing.Point(553, 399);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(213, 37);
-            this.btnSalir.TabIndex = 16;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = false;
             // 
             // btnPass
             // 
@@ -281,7 +271,6 @@
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnUsuarios);
             this.Controls.Add(this.btnPass);
-            this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnMenu);
             this.Controls.Add(this.btnSesion);
             this.Controls.Add(this.panel2);
@@ -294,6 +283,25 @@
             this.Text = "FRMADMIN";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FRMADMIN_FormClosed);
             this.Load += new System.EventHandler(this.FRMADMIN_Load);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.panel2, 0);
+            this.Controls.SetChildIndex(this.btnSesion, 0);
+            this.Controls.SetChildIndex(this.btnMenu, 0);
+            this.Controls.SetChildIndex(this.btnPass, 0);
+            this.Controls.SetChildIndex(this.btnUsuarios, 0);
+            this.Controls.SetChildIndex(this.pictureBox2, 0);
+            this.Controls.SetChildIndex(this.txtID, 0);
+            this.Controls.SetChildIndex(this.txtNombre, 0);
+            this.Controls.SetChildIndex(this.txtUsuario, 0);
+            this.Controls.SetChildIndex(this.panel1, 0);
+            this.Controls.SetChildIndex(this.panel3, 0);
+            this.Controls.SetChildIndex(this.label4, 0);
+            this.Controls.SetChildIndex(this.panel4, 0);
+            this.Controls.SetChildIndex(this.ptrFoto, 0);
+            this.Controls.SetChildIndex(this.label5, 0);
+            this.Controls.SetChildIndex(this.btnSalir, 0);
             ((System.ComponentModel.ISupportInitialize)(this.ptrFoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -309,7 +317,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button btnSesion;
         private System.Windows.Forms.Button btnMenu;
-        private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnPass;
         private System.Windows.Forms.Button btnUsuarios;
         private System.Windows.Forms.PictureBox pictureBox2;
