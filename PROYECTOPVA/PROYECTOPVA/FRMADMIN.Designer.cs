@@ -32,22 +32,22 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnEntrar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.txtUserLog = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.btnSesion = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.btnPass = new System.Windows.Forms.Button();
+            this.btnUsuarios = new System.Windows.Forms.Button();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ptrFoto = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrFoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,9 +69,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label2.Location = new System.Drawing.Point(24, 198);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(211, 23);
+            this.label2.Size = new System.Drawing.Size(137, 23);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Nombre Administrador:";
+            this.label2.Text = "Administrador:";
             // 
             // label3
             // 
@@ -92,109 +92,109 @@
             this.panel2.Size = new System.Drawing.Size(207, 1);
             this.panel2.TabIndex = 13;
             // 
-            // btnEntrar
+            // btnSesion
             // 
-            this.btnEntrar.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEntrar.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnEntrar.Location = new System.Drawing.Point(553, 332);
-            this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(213, 37);
-            this.btnEntrar.TabIndex = 14;
-            this.btnEntrar.Text = "Cerrar Sesión";
-            this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnSesion.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnSesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSesion.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSesion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnSesion.Location = new System.Drawing.Point(553, 332);
+            this.btnSesion.Name = "btnSesion";
+            this.btnSesion.Size = new System.Drawing.Size(213, 37);
+            this.btnSesion.TabIndex = 14;
+            this.btnSesion.Text = "Cerrar Sesión";
+            this.btnSesion.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnMenu
             // 
-            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(553, 138);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 37);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Menú Principal";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnMenu.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMenu.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMenu.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnMenu.Location = new System.Drawing.Point(553, 138);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(213, 37);
+            this.btnMenu.TabIndex = 15;
+            this.btnMenu.Text = "Menú Principal";
+            this.btnMenu.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnSalir
             // 
-            this.button2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(553, 399);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(213, 37);
-            this.button2.TabIndex = 16;
-            this.button2.Text = "Salir";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSalir.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSalir.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnSalir.Location = new System.Drawing.Point(553, 399);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(213, 37);
+            this.btnSalir.TabIndex = 16;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnPass
             // 
-            this.button3.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(553, 269);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(213, 37);
-            this.button3.TabIndex = 17;
-            this.button3.Text = "Cambiar Contraseña";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnPass.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnPass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPass.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPass.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnPass.Location = new System.Drawing.Point(553, 269);
+            this.btnPass.Name = "btnPass";
+            this.btnPass.Size = new System.Drawing.Size(213, 37);
+            this.btnPass.TabIndex = 17;
+            this.btnPass.Text = "Cambiar Contraseña";
+            this.btnPass.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnUsuarios
             // 
-            this.button4.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button4.Location = new System.Drawing.Point(553, 203);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(213, 37);
-            this.button4.TabIndex = 18;
-            this.button4.Text = "Administrar Usuarios";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnUsuarios.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUsuarios.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUsuarios.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnUsuarios.Location = new System.Drawing.Point(553, 203);
+            this.btnUsuarios.Name = "btnUsuarios";
+            this.btnUsuarios.Size = new System.Drawing.Size(213, 37);
+            this.btnUsuarios.TabIndex = 18;
+            this.btnUsuarios.Text = "Administrar Usuarios";
+            this.btnUsuarios.UseVisualStyleBackColor = false;
             // 
-            // txtUserLog
+            // txtID
             // 
-            this.txtUserLog.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtUserLog.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtUserLog.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserLog.ForeColor = System.Drawing.Color.Black;
-            this.txtUserLog.Location = new System.Drawing.Point(253, 151);
-            this.txtUserLog.Name = "txtUserLog";
-            this.txtUserLog.Size = new System.Drawing.Size(206, 24);
-            this.txtUserLog.TabIndex = 21;
-            this.txtUserLog.Text = "1";
-            this.txtUserLog.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtID.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtID.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtID.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtID.ForeColor = System.Drawing.Color.Black;
+            this.txtID.Location = new System.Drawing.Point(253, 151);
+            this.txtID.Name = "txtID";
+            this.txtID.ReadOnly = true;
+            this.txtID.Size = new System.Drawing.Size(206, 24);
+            this.txtID.TabIndex = 21;
+            this.txtID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(253, 205);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(206, 24);
-            this.textBox1.TabIndex = 22;
-            this.textBox1.Text = "Fulanito Perez";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNombre.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNombre.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.ForeColor = System.Drawing.Color.Black;
+            this.txtNombre.Location = new System.Drawing.Point(253, 205);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.ReadOnly = true;
+            this.txtNombre.Size = new System.Drawing.Size(206, 24);
+            this.txtNombre.TabIndex = 22;
+            this.txtNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox2
+            // txtUsuario
             // 
-            this.textBox2.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.ForeColor = System.Drawing.Color.Black;
-            this.textBox2.Location = new System.Drawing.Point(253, 263);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(206, 24);
-            this.textBox2.TabIndex = 23;
-            this.textBox2.Text = "fperez";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUsuario.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsuario.Font = new System.Drawing.Font("Arial Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.ForeColor = System.Drawing.Color.Black;
+            this.txtUsuario.Location = new System.Drawing.Point(253, 263);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.ReadOnly = true;
+            this.txtUsuario.Size = new System.Drawing.Size(206, 24);
+            this.txtUsuario.TabIndex = 23;
+            this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // panel1
             // 
@@ -231,15 +231,15 @@
             this.label4.TabIndex = 15;
             this.label4.Text = "Foto:";
             // 
-            // pictureBox1
+            // ptrFoto
             // 
-            this.pictureBox1.Image = global::PROYECTOPVA.Properties.Resources.persona;
-            this.pictureBox1.Location = new System.Drawing.Point(241, 367);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(207, 186);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 24;
-            this.pictureBox1.TabStop = false;
+            this.ptrFoto.Image = global::PROYECTOPVA.Properties.Resources.persona;
+            this.ptrFoto.Location = new System.Drawing.Point(241, 367);
+            this.ptrFoto.Name = "ptrFoto";
+            this.ptrFoto.Size = new System.Drawing.Size(207, 186);
+            this.ptrFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptrFoto.TabIndex = 24;
+            this.ptrFoto.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -270,20 +270,20 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(834, 587);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.ptrFoto);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.txtUserLog);
+            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btnEntrar);
+            this.Controls.Add(this.btnUsuarios);
+            this.Controls.Add(this.btnPass);
+            this.Controls.Add(this.btnSalir);
+            this.Controls.Add(this.btnMenu);
+            this.Controls.Add(this.btnSesion);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -293,7 +293,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRMADMIN";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FRMADMIN_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.FRMADMIN_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.ptrFoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -306,20 +307,20 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnEntrar;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnSesion;
+        private System.Windows.Forms.Button btnMenu;
+        private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btnPass;
+        private System.Windows.Forms.Button btnUsuarios;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox txtUserLog;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtID;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtUsuario;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ptrFoto;
         private System.Windows.Forms.Label label5;
     }
 }

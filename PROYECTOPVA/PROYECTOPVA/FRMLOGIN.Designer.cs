@@ -55,7 +55,7 @@
             this.button1.Location = new System.Drawing.Point(68, 361);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(269, 37);
-            this.button1.TabIndex = 14;
+            this.button1.TabIndex = 4;
             this.button1.Text = "Registrarse";
             this.button1.UseVisualStyleBackColor = false;
             // 
@@ -68,7 +68,7 @@
             this.btnEntrar.Location = new System.Drawing.Point(68, 307);
             this.btnEntrar.Name = "btnEntrar";
             this.btnEntrar.Size = new System.Drawing.Size(269, 37);
-            this.btnEntrar.TabIndex = 13;
+            this.btnEntrar.TabIndex = 2;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
             this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
@@ -90,7 +90,7 @@
             this.txtPassLog.Location = new System.Drawing.Point(109, 246);
             this.txtPassLog.Name = "txtPassLog";
             this.txtPassLog.Size = new System.Drawing.Size(216, 20);
-            this.txtPassLog.TabIndex = 11;
+            this.txtPassLog.TabIndex = 1;
             this.txtPassLog.Text = "Contraseña...";
             this.txtPassLog.Click += new System.EventHandler(this.txtPassLog_Click);
             // 
@@ -111,7 +111,7 @@
             this.txtUserLog.Location = new System.Drawing.Point(109, 161);
             this.txtUserLog.Name = "txtUserLog";
             this.txtUserLog.Size = new System.Drawing.Size(216, 20);
-            this.txtUserLog.TabIndex = 9;
+            this.txtUserLog.TabIndex = 0;
             this.txtUserLog.Text = "Nombre de Usuario...";
             this.txtUserLog.Click += new System.EventHandler(this.txtUserLog_Click);
             // 
@@ -181,6 +181,7 @@
             // 
             // FRMLOGIN
             // 
+            this.AcceptButton = this.btnEntrar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -201,6 +202,7 @@
             this.Name = "FRMLOGIN";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FRMLOGIN_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

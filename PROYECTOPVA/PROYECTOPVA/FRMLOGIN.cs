@@ -96,5 +96,10 @@ namespace PROYECTOPVA
             panel1.BackColor = Color.DeepSkyBlue;
             txtUserLog.ForeColor = Color.DeepSkyBlue;
         }
+
+        private void FRMLOGIN_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
