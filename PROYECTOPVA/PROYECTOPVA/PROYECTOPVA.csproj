@@ -69,8 +69,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FRMADMIN.resx">
+      <DependentUpon>FRMADMIN.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMLOGIN.resx">
       <DependentUpon>FRMLOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMUSER.resx">
+      <DependentUpon>FRMUSER.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,6 +130,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\mostrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jefe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\persona.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

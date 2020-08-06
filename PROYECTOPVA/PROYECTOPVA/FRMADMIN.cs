@@ -16,5 +16,10 @@ namespace PROYECTOPVA
         {
             InitializeComponent();
         }
+
+        private void FRMADMIN_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

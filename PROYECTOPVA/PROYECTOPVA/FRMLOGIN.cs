@@ -31,13 +31,13 @@ namespace PROYECTOPVA
                 string cuenta = ds.Tables[0].Rows[0]["username"].ToString().Trim();
                 string contra = ds.Tables[0].Rows[0]["password"].ToString().Trim();
 
-                if (cuenta == txtUserLog.Text.Trim())
+                if (cuenta == txtUserLog.Text.Trim() && contra == txtPassLog.Text.Trim())
                 {
                     if (Convert.ToBoolean(ds.Tables[0].Rows[0]["status_adm"]) == true)
                     {
-                        FRMADMIN VenMe = new FRMADMIN();
+                        FRMADMIN VenAD = new FRMADMIN();
                         this.Hide();
-                        VenMe.Show();
+                        VenAD.Show();
                     }
                     else
                     {
