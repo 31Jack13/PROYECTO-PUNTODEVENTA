@@ -53,5 +53,48 @@ namespace PROYECTOPVA
                 MessageBox.Show("ERROR , Usuario o contrasena incorrecta");
             }
         }
+
+        private void txtUserLog_Click(object sender, EventArgs e)
+        {
+            txtUserLog.Clear();
+            pictureBox2.Image = Properties.Resources.log;
+            panel1.BackColor = Color.WhiteSmoke;
+            txtUserLog.ForeColor = Color.WhiteSmoke;
+
+            pictureBox3.Image = Properties.Resources.contrasena;
+            panel2.BackColor = Color.DeepSkyBlue;
+            txtPassLog.ForeColor = Color.DeepSkyBlue;
+        }
+
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                if (txtPassLog.PasswordChar == '*')
+                {
+                    txtPassLog.PasswordChar = '\0';
+                    pictureBox4.Image = Properties.Resources.mostrar;
+                }
+            }
+            else
+            {
+                pictureBox4.Image = Properties.Resources.mostrar_contrasena;
+                txtPassLog.PasswordChar = '*';
+            }
+        }
+
+        private void txtPassLog_Click(object sender, EventArgs e)
+        {
+            txtPassLog.Clear();
+            txtPassLog.PasswordChar = '*';
+            pictureBox3.Image = Properties.Resources.pass;
+            panel2.BackColor = Color.WhiteSmoke;
+            txtPassLog.ForeColor = Color.WhiteSmoke;
+
+            pictureBox2.Image = Properties.Resources.iniciar_sesion;
+            panel1.BackColor = Color.DeepSkyBlue;
+            txtUserLog.ForeColor = Color.DeepSkyBlue;
+        }
     }
 }
