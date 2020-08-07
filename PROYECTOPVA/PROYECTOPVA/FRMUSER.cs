@@ -37,5 +37,12 @@ namespace PROYECTOPVA
 
             ptrFoto.Image = Image.FromFile(url);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MDIMenuPrincipal MP = new MDIMenuPrincipal();
+            this.Hide();
+            MP.Show();
+        }
     }
 }

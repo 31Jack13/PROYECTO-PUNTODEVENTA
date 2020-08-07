@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FRMConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMConsultas.Designer.cs">
+      <DependentUpon>FRMConsultas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRMLOGIN.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +66,24 @@
     </Compile>
     <Compile Include="FRMADMIN.Designer.cs">
       <DependentUpon>FRMADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMMantenimientoClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMMantenimientoClientes.Designer.cs">
+      <DependentUpon>FRMMantenimientoClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMMantenimientoProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMMantenimientoProductos.Designer.cs">
+      <DependentUpon>FRMMantenimientoProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRMPadreMantenimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRMPadreMantenimientos.Designer.cs">
+      <DependentUpon>FRMPadreMantenimientos.cs</DependentUpon>
     </Compile>
     <Compile Include="FRMPadre.cs">
       <SubType>Form</SubType>
@@ -73,19 +97,40 @@
     <Compile Include="FRMUSER.Designer.cs">
       <DependentUpon>FRMUSER.cs</DependentUpon>
     </Compile>
+    <Compile Include="MDIMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIMenuPrincipal.Designer.cs">
+      <DependentUpon>MDIMenuPrincipal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FRMADMIN.resx">
       <DependentUpon>FRMADMIN.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRMConsultas.resx">
+      <DependentUpon>FRMConsultas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRMLOGIN.resx">
       <DependentUpon>FRMLOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMMantenimientoClientes.resx">
+      <DependentUpon>FRMMantenimientoClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMMantenimientoProductos.resx">
+      <DependentUpon>FRMMantenimientoProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRMPadreMantenimientos.resx">
+      <DependentUpon>FRMPadreMantenimientos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMPadre.resx">
       <DependentUpon>FRMPadre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRMUSER.resx">
       <DependentUpon>FRMUSER.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIMenuPrincipal.resx">
+      <DependentUpon>MDIMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
